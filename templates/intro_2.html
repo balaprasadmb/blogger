@@ -1,0 +1,110 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western"><p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+ Python is simple, easy to use, interpreted programming language, offering much more structure and support for large programs than shell scripts or
+  batch files can offer. Being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because
+  of its more general data types Python is applicable to a much larger problem domain.</p></div>
+
+<div class="western"><p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+ As Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. 
+ Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules
+  that you can use as the basis of your programs or as examples to start learning to program in Python. Some of these modules provide things like file I/O, 
+  system calls, sockets, and even interfaces to graphical user interface toolkits like Tk. 
+  Python also has Web Development Frameworks like Django, Flask and Pyramid. It can also be used for  automation with tools like Robot Framework, Selenium and Ansible.</p></div>
+
+<div class="western"><h3 style="font-family: times, times new roman, serif;"> Comments In Python </h3>
+<span style="font-family: times, times new roman, serif;">A Comments starts with "#" (Hash) in python. 
+It is the part which is not executed, i.e It is ignored by Interpreter.</span></div>
+
+<div class="western"><h3 style="font-family: times, times new roman, serif;"> Indentation</h3>
+<span style="font-family: times, times new roman, serif;">In Python, Unlike C, Java We don't use Curly brackets {}. Here Spaces Or In python Indentation Matters.</span></div>
+
+
+<div class="western"><h3 style="font-family: times, times new roman, serif;"> A Step Towards Programming</h3>
+<span style="font-family: times, times new roman, serif;">Now, We will Write Classic Hello World Program.<br/>
+Their is Difference in Python 2.x & 3.x in function print.<br/>
+2.x Version of Our Program is</span>
+<pre style="font-family: courier new, courier, monospace;">print "Hello World From Python"</pre>
+<br/>
+<span style="font-family: times, times new roman, serif;">3.x Version of Our Program is</span>
+<pre style="font-family: courier new, courier, monospace;">print("Hello World From Python")</pre>
+<span style="font-family: times, times new roman, serif;">That's It. Output:</span>
+<pre style="font-family: courier new, courier, monospace;">Hello World From Python</pre>
+<span style="font-family: times, times new roman, serif;">You can take input by using methods input() or raw_input().</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;n = input('Enter the limit: ')
+Enter the limit: 9
+</pre>
+<span style="font-family: times, times new roman, serif;">You can check type of variable using type()</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;type(n)
+&lt;type 'int'&gt;</pre>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;s = raw_input('Enter something: ')
+Enter something: Python
+</pre>
+<span style="font-family: times, times new roman, serif;">You can also check type of this using type()</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;type(s)
+&lt;type 'str'&gt;</pre>
+</div>
+
+<div class="western">
+<span style="font-family: times, times new roman, serif;">Now, We will perform some math on two number,<br/>
+Addition</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;2 + 3
+5</pre>
+<span style="font-family: times, times new roman, serif;">Subtraction</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;5 - 2
+3</pre>
+<span style="font-family: times, times new roman, serif;">Division</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;8 / 2
+4</pre>
+<span style="font-family: times, times new roman, serif;">Multiplication</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;3 * 7
+21</pre>
+</div>
+
+<div class="western"><h4 style="font-family: times, times new roman, serif;"> Playing with Strings</h4>
+<span style="font-family: times, times new roman, serif;">String can be 'Single Quoted' or &quot;Double Quoted&quot;</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;s = 'Hello World'</pre>
+<span style="font-family: times, times new roman, serif;">Then s will print string 'Hello World'</span>
+<br/>
+<span style="font-family: times, times new roman, serif;">'\' Can be used as escape sequence Character</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;print 'isn\'t it?'
+isn't it?</pre>
+<span style="font-family: times, times new roman, serif;">You can write Single Quoted String in Double Quoted & Vice Versa.</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;'This is &quot;Double Quoted&quot; with single quotes'
+'This is &quot;Double Quoted&quot; with single quotes'
+>>>&nbsp;&quot;This is 'Single Quoted' with Double quotes&quot;
+&quot;This is 'Single Quoted' with Double quotes&quot;
+>>>&nbsp;len(s)
+6</pre>
+<span style="font-family: times, times new roman, serif;"> len() will return length of String</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;s[0]
+'H'
+>>>&nbsp;s[6:]
+'World'
+>>>&nbsp;s[0:5]
+'Hello'
+>>>&nbsp;s[::-1]
+'dlroW olleH'</pre>
+<span style="font-family: times, times new roman, serif;"> Can be used to reverse the String.</span>
+</div>
+<div class="western"><h4 style="font-family: times, times new roman, serif;"> List - A Data Structure</h4>
+<span style="font-family: times, times new roman, serif;">List is Data structure in python, like Array. But Unlike String and Array, 
+which are 'Immutable' list is 'Mutable'. It store items separated by comma(,), It might contain items of same type or different types.</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;team = [3, 9, 11, 19, 37]
+>>>&nbsp;team
+[3, 9, 11, 19, 37]
+>>>&nbsp;team[1]
+9
+>>>&nbsp;team[-1]
+37
+>>>&nbsp;team[2] = 91
+>>>&nbsp;team
+[ 3, 9, 91, 19, 37]
+>>>&nbsp;team.append('b')
+>>>&nbsp;team
+[ 3, 9, 91, 19, 37, 'b']
+>>>&nbsp;team.pop()
+'b'
+</pre>
+<span style="font-family: times, times new roman, serif;">This is just introduction. We will see this in detail, Keep Following</span>
+</div>
+</div>
