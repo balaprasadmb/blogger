@@ -1,0 +1,131 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western">
+<h2 style="font-family: times, times new roman, serif;">Defining Functions</h2>
+<p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+We can define function by using def keyword, the function definition written by using def keyword with function name followed by parameters
+ enclosed by simple parenthesis or can be blank. The next statement is at next line with indent. It can have docstring.</p>
+<b style="font-family: times, times new roman, serif;">Example:</b><br/>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Lets write function for checking number is prime or not.</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;def check_prime(num):
+...&nbsp;    is_prime = True
+...&nbsp;    for index in range(2, num):
+...&nbsp;        if num % index == 0:
+...&nbsp;            is_prime = False
+...&nbsp;                break
+...&nbsp;        index += 1
+...&nbsp;    if is_prime:
+...&nbsp;        print "Given Number is Prime"
+...&nbsp;    else:
+...&nbsp;        print "Given Number is Not Prime"
+...
+>>>&nbsp;check_prime(9)
+Given Number is Prime
+>>>&nbsp;check_prime(8)
+Given Number is Not Prime
+</pre>
+</div>
+<div class="western">
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Function parameters can have Default Argument, Variable Number of Arguments, Keyword Arguments.</span>
+<h4 style="font-family: times, times new roman, serif;">Default Arguments</h4>
+<br/><span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+A function can have default arguments as shown below:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;def modify_me(limit, text = "Their"):
+...&nbsp;    for i in range(limit):
+...&nbsp;        print "Hello " + text
+...
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+This function can be called with mandatory argument as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;modify_me(3):
+Hello Their
+Hello Their
+Hello Their
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Or with optional arguments as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;modify_me(3, 'World')
+Hello World
+Hello World
+Hello World
+</pre>
+</div>
+<div class="western">
+<h4 style="font-family: times, times new roman, serif;">Keyword Arguments</h4>
+<br/><span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+A function can be called with keyword arguments, i.e. keyword=value, as shown below:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;def greet(limit, greetings = "Hello", whom = "Their"):
+...&nbsp;    for i in range(limit):
+...&nbsp;        print greetings + ' ' + whom
+...
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+This function can be called with mandatory argument as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(1):
+Hello Their
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Or with optional keyword arguments as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(3, 'World')
+Hello World
+Hello World
+Hello World
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Or giving keyword arguments as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(3, greetings='Good Morning', whom='Dear')
+Good Morning Dear
+Good Morning Dear
+Good Morning Dear
+</pre>
+</div>
+<div class="western">
+<h4 style="font-family: times, times new roman, serif;">Variable Or Arbitrary  Arguments</h4>
+<br/><span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+It can be used when you don't know
+<ol type="1">
+<li>How many arguments are there?</li>
+<li>How many of them keywords?</li>
+</ol>
+</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;def greet(limit, greetings = "Hello", whom = "Their"):
+...&nbsp;    for i in range(limit):
+...&nbsp;        print greetings + ' ' + whom
+...
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+This function can be called with mandatory argument as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(1):
+Hello Their
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Or with optional keyword arguments as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(3, 'World')
+Hello World
+Hello World
+Hello World
+</pre>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Or giving keyword arguments as:-</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;greet(3, greetings='Good Morning', whom='Dear')
+Good Morning Dear
+Good Morning Dear
+Good Morning Dear
+</pre>
+</div>
+<div class="western">
+<h4 style="font-family: times, times new roman, serif;">range Function</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates
+arithmetic progressions:
+</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;for i in range(10):
+...&nbsp;    print i,
+...
+0 1 2 3 4 5 6 7 8 9
+</pre>
+</div>
+<span style="font-family: times, times new roman, serif;">This will print nothing.<br/>
+Keep Following, For More.
+</div>
