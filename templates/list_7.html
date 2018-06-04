@@ -1,0 +1,80 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western">
+<h2 style="font-family: times, times new roman, serif;">List</h2>
+<p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+List is data structure in python more like array in c or java. But in python list is mutable.</p>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+List is initialized in python using list class or just [].
+<br/>
+list1 = []
+<br/>
+list2 = list()
+<br/>
+Below are some methods of list object
+</span>
+<h4 style="font-family: times, times new roman, serif;">list.append(item)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Add an Item to end of the list.</span>
+<h4 style="font-family: times, times new roman, serif;">list.count(item)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns number of time item appears in the list.</span>
+<h4 style="font-family: times, times new roman, serif;">list.extend(anotherList)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Extend the list by appending all the items from the given list.</span>
+<h4 style="font-family: times, times new roman, serif;">list.index(item, [start], [end])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the first index of value. If specified optional arguments start or end, the item is 
+searched within start and end. Raises ValueError if item not present.</span>
+<h4 style="font-family: times, times new roman, serif;">list.insert(index, item)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Insert an item at a given position, the element is inserted before the index.</span>
+<h4 style="font-family: times, times new roman, serif;">list.pop([index])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove an item from the list which is at index, if specified. If Not then it removes last item from list.</span>
+<h4 style="font-family: times, times new roman, serif;">list.remove(item)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove a first item from list whose value is equal to item.</span>
+<h4 style="font-family: times, times new roman, serif;">list.reverse()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Reverse the items of list, in place.</span>
+<h4 style="font-family: times, times new roman, serif;">list.sort()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+sort the items of list in place.<br/><br/>
+Lets understand by example:-
+</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;l=[]
+>>>&nbsp;l.append(19)
+>>>&nbsp;l.append(3)
+>>>&nbsp;l.append(11)
+>>>&nbsp;l
+[19, 3, 11]
+>>>&nbsp;l.count(19)
+1
+>>>&nbsp;l.extend([12, 39, 5])
+>>>&nbsp;l
+[19, 3, 11, 12, 39, 5]
+>>>&nbsp;l.index(39)
+4
+>>>&nbsp;l.insert(3, 19)
+>>>&nbsp;l
+[19, 3, 11, 19, 12, 39, 5]
+>>>&nbsp;l.remove(5)
+>>>&nbsp;l
+[19, 3, 11, 19, 12, 39]
+>>>&nbsp;l.pop()
+39
+>>>&nbsp;l.index(3)
+1
+>>>&nbsp;l.remove(12)
+>>>&nbsp;l
+[19, 3, 11, 19]
+>>>&nbsp;l.reverse()
+>>>&nbsp; l
+[19, 11, 3, 19]
+>>>&nbsp;l.sort()
+>>>l
+[3, 11, 19, 19]
+</pre></div>
+<br/>
+<span style="font-family: times, times new roman, serif;">Keep Following, For More.</span>
+</div>
