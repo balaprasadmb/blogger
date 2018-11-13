@@ -1,0 +1,150 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western">
+<h2 style="font-family: times, times new roman, serif;">Dictionaries</h2>
+<p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+A dictionary is unordered set of key:value pairs, with unique keys enclosed within {} brackets.
+</p>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+It can be initialized as<br/>
+d1 = {}<br/>
+d2 = dict()<br/>
+d3 = dict(key1=value1, key2=value2,…,keyN=valueM)<br/>
+d4 = dict(some_iterable)<br/>
+d5=dict(mapping_object)<br/>
+There are following methods dictionary object has:-</span>
+<h4 style="font-family: times, times new roman, serif;">dict.clear()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Removes all items from the dictionary and return None.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.copy()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns shallow copy of dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.fromkeys(k [,v])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Creates new dictionary with keys from k and optionally taking values equal to v, and v Defaults to None.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.get(k, d)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns value from dictionary whose key equal to k, else returns d, and d Defaults to None.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.has_key(k)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns true if dictionary has key k else False.<br/>
+	NOTE: It is Removed From 3.x Version of Python</span>
+<h4 style="font-family: times, times new roman, serif;">dict.items()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the list of key,value pair from dictionary as 2-tuples.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.iteritems()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the iterator over items of dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.iterkeys()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the iterator over keys of dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.itervalues()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the iterator over values of dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.keys()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the list of keys from dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.pop(k[,d])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the value of given key by removing key and associated value, if d is given optionally and key is not present d is returned else KeyError raised.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.popitem()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Removes and Returns last added item i.e. (key, value) pair as tuple but raises KeyError if dictionary is empty.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.setdefault(k[, d])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+sets default value of key k if key k is not in dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.update(another_dictionary)</h4>
+<div style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+It updates dictionary with items of another dictionary and Returns None. If key is present then it's value is updated with another dictionaries value at that key. As in words of The Python Founder Gudo Van Rossum, following operations are performed for 
+d.update(E[, F]),<br/>
+<div style="text-align: center;">If E present and has a .keys() method, does:     for k in E: D[k] = E[k]<br/>
+If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = v<br/>
+In either case, this is followed by: for k in F: D[k] = F[k]</span>
+</div>
+<h4 style="font-family: times, times new roman, serif;">dict.values()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the list of values from dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.viewitems()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the unique set like object of items from dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.viewkeys()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the unique set like object of keys from dictionary.</span>
+<h4 style="font-family: times, times new roman, serif;">dict.viewvalues()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns of object with values from dictionary.<br/>
+Let's understand this by example code<br/>
+</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;d={'one':1, 'three':3, 'nine':'9', 'jack':'jill'}
+>>>&nbsp;d['five']=5
+>>>&nbsp;d
+{'five': 5, 'nine': '9', 'three': 3, 'jack': 'jill', 'one': 1}
+>>>&nbsp;dict1=d.copy()
+>>>&nbsp;dict1
+{'nine': '9', 'one': 1, 'five': 5, 'three': 3, 'jack': 'jill'}
+>>>&nbsp;dict2=d.fromkeys('one')
+>>>&nbsp;dict
+{'e': None, 'o': None, 'n': None}
+>>>&nbsp;dict2.clear()
+>>>&nbsp;dict2
+{}
+>>>&nbsp;d.get('three')
+3
+>>>&nbsp;d.has_key('nine')
+True
+>>>&nbsp;d.items()
+[('five', 5), ('nine', '9'), ('three', 3), ('jack', 'jill'), ('one', 1)]
+>>>&nbsp;print d.iteritems()
+<dictionary-itemiterator object at 0x7f14b8f62f18>
+>>>&nbsp;for k, v in d.iteritems():
+...&nbsp;    print k, v
+...&nbsp;
+five 5
+nine 9
+three 3
+jack jill
+one 1
+>>>&nbsp;print d.iterkeys()
+<dictionary-keyiterator object at 0x7f14b8f62f18>
+>>>&nbsp;for k in d.iterkeys():
+...&nbsp;    print k
+...&nbsp;
+five
+nine
+three
+jack
+one
+>>>&nbsp;print d.itervalues()
+<dictionary-valueiterator object at 0x7f14b8f62f18>
+>>>&nbsp;for v in d.itervalues():
+...&nbsp;    print v
+...&nbsp;
+5
+9
+3
+jill
+1
+>>>&nbsp;print d.keys()
+['five', 'nine', 'three', 'jack', 'one']
+>>>&nbsp;d.pop('jack')
+'jill'
+>>>&nbsp;d
+{'five': 5, 'nine': '9', 'three': 3, 'one': 1}
+>>>&nbsp;d.popitem()
+('five', 5)
+>>>&nbsp;d
+{'nine': '9', 'three': 3, 'one': 1}
+>>>&nbsp;d.update(dict1)
+>>>&nbsp;d
+{'three': 3, 'one': 1, 'nine': '9', 'jack': 'jill', 'five': 5}
+>>>&nbsp;print d.values()
+[3, 1, '9', 'jill', 5]
+>>>&nbsp;print d.viewitems()
+dict_items([('three', 3), ('one', 1), ('nine', '9'), ('jack', 'jill'), ('five', 5)])
+>>>&nbsp;d.viewkeys()
+dict_keys(['three', 'one', 'nine', 'jack', 'five'])
+>>>&nbsp;d.viewvalues()
+dict_values([3, 1, '9', 'jill', 5])
+</pre><br>
+<span style="font-family: times, times new roman, serif;">Keep Following, For More.</span>
+</div>
+</div>
