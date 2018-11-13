@@ -1,0 +1,115 @@
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div class="western">
+<h2 style="font-family: times, times new roman, serif;">Sets</h2>
+<p style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+A set is unordred collection of items with no duplicate. It can be used to eliminating duplicates or membership testing.
+ Set also supports union, intersection, difference and symmetric difference. Set can be initialized using set().</p>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Set can be initialized using set().<br/>
+set1 = set()<br/>
+Set has following methods</span>
+<h4 style="font-family: times, times new roman, serif;">set.add(element)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Add element to set. If element already present nothing happens.</span>
+<h4 style="font-family: times, times new roman, serif;">set.clear()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove all elements and clear the set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.copy()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns shallow copy set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.difference(another_set[s])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the difference of two or more sets as new set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.difference_update(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove all elements of another from this set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.discard(element)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove an element from set if is a member.</span>
+<h4 style="font-family: times, times new roman, serif;">set.intersection(another_set[s])</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the intersection of two or more sets as new set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.intersection_update(anoter_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Update a set with the intersection of itself and another.</span>
+<h4 style="font-family: times, times new roman, serif;">set.isdisjoint(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Return True if two sets have null intersection, means that Returns true if the set have elements otherwise False.</span>
+<h4 style="font-family: times, times new roman, serif;">set.issubset(super_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Check whether super set contains this set. It Returns True if super set has all elements of this set and False Otherwise.</span>
+<h4 style="font-family: times, times new roman, serif;">set.issuperset(sub_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Check whether this set contains another set. It Returns True if this set has all elements of the sub set and False Otherwise.</span>
+<h4 style="font-family: times, times new roman, serif;">set.pop()</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove and return an arbitrary set element and Raises KeyError if set is empty.</span>
+<h4 style="font-family: times, times new roman, serif;">set.remove(element)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Remove an element from if it is member and If the element is not a member, raise KeyError.</span>
+<h4 style="font-family: times, times new roman, serif;">set.symmetric_difference(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the symmetric difference of two sets as a new set. i.e. All elements that are in exactly in one of the sets.</span>
+<h4 style="font-family: times, times new roman, serif;">set.symmetric_difference_update(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Update a set with the symmetric difference of itself and another.</span>
+<h4 style="font-family: times, times new roman, serif;">set.union(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Returns the union of sets as a new set. i.e. All elements that are in either set.</span>
+<h4 style="font-family: times, times new roman, serif;">set.update(another_set)</h4>
+<span style="font-family: times, times new roman, serif;">&nbsp;&nbsp;&nbsp;&nbsp;
+Update a set with the union of itself and another set.<br/>
+Let's understand this by example code<br/>
+</span>
+<pre style="font-family: courier new, courier, monospace;">>>>&nbsp;x=set()
+>>>&nbsp;x.add(3)
+>>>&nbsp;x.add(7)
+>>>&nbsp;x.add(9)
+>>>&nbsp;x
+set([3, 7, 9])
+>>>&nbsp;l = [3, 5, 8, 9, 11, 19]
+>>>&nbsp;y = set(l)
+>>>&nbsp;y
+set([3, 5, 8, 9, 11, 19])
+>>>&nbsp;z=y.copy()
+>>>&nbsp;z
+set([19, 3, 5, 8, 9, 11])
+>>>&nbsp;x.difference(y)
+set([7])
+>>>&nbsp;z.discard(5)
+>>>&nbsp;z
+set([19, 3, 8, 9, 11])
+>>>&nbsp;y.intersection(x)
+set([9, 3])
+>>>&nbsp;x.isdisjoint(y)
+False
+>>>&nbsp;z.issubset(y)
+True
+>>>&nbsp;y.issuperset(x)
+False
+>>>&nbsp;z.pop()
+19
+>>>&nbsp;y.remove(8)
+>>>&nbsp; x.symmetric_difference(z)
+set([8, 11, 7])
+>>>&nbsp; x.union(y)
+set([3, 5, 7, 9, 11, 19])
+>>>&nbsp;x
+set([9, 3, 7])
+>>>&nbsp;y
+set([3, 5, 9, 11, 19])
+>>>&nbsp;z.clear()
+>>>&nbsp;z
+set([])
+>>>&nbsp;x&y
+set([9, 3])
+>>>&nbsp; x|y
+set([3, 5, 7, 9, 11, 19])
+>>>&nbsp;y-x
+set([19, 11, 5])
+>>>&nbsp;y^x
+set([19, 11, 5, 7])
+</pre><br>
+<span style="font-family: times, times new roman, serif;">Keep Following, For More.</span>
+</div>
+</div>
